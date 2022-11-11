@@ -1,0 +1,14 @@
+.sidenav {
+  position: fixed;
+  background-color: salmon;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  width: 30rem;
+  transform: translateX(100%);
+  transition: transform 250ms ease;
+
+  &.show {
+    transform: translateX(0);
+  }
+}

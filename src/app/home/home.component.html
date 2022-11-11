@@ -1,2 +1,8 @@
-<p>{{pokemon.nombre}}</p>
-<app-card className="" ></app-card>
+<app-header></app-header>
+<p>{{ pokemon.nombre }}</p>
+
+<app-card className=""></app-card>
+
+<button (click)="desplegar()">desplegar</button>
+
+<div class="sidenav" [class.show]="showNav"></div>

@@ -1,0 +1,49 @@
+header {
+  width: 100%;
+  height: 4.5rem;
+  background-color: salmon;
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+    width: 90%;
+    max-width: 69.375rem;
+    margin: 0 auto;
+    padding: 0.3rem 0;
+
+    &_logo {
+      height: 100%;
+
+      img {
+        max-height: 100%;
+      }
+    }
+
+    &_navigation {
+      display: flex;
+      flex-direction: row;
+      a + a {
+        margin-left: 0.5rem;
+      }
+
+      a {
+        background-color: transparent;
+        border: solid 1px #ffffff;
+        color: white;
+        text-decoration: none;
+        height: 100%;
+        padding: 0.5rem;
+        border-radius: 3px;
+
+        &:hover {
+          background-color: white;
+          border: none;
+          color: salmon;
+        }
+      }
+    }
+  }
+}
